@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TMAC — TAM Analytics Consulting is Africa's Digital Intelligence Company. We Build digital systems, Analyze business data, and Automate operations for sustainable growth. Trusted by SMEs, NGOs, Startups and Educational Institutions across Africa.">
+  <meta name="keywords" content="digital intelligence company africa, analytics consulting africa, business automation africa, TAM Analytics Consulting, TMAC, data analytics Nigeria, BI consulting Africa">
+  <meta name="author" content="TAM Analytics Consulting">
+  <meta property="og:title" content="TMAC | Build. Analyze. Automate. — Africa's Digital Intelligence Company">
+  <meta property="og:description" content="TMAC helps organizations build digital systems, generate actionable intelligence, and automate operations for sustainable growth across Africa.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tamanalytics.com">
+  <title>TMAC | Build. Analyze. Automate. — TAM Analytics Consulting</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Sora:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Canvas Particle Background -->
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/2348100740782?text=Hello%20TMAC%2C%20I'd%20like%20to%20discuss%20a%20project."
+     id="whatsapp-float"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Chat with TMAC on WhatsApp"
+     title="WhatsApp Us">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="wa-label">WhatsApp Us</span>
+    <span class="wa-reply">Typically replies within 2 hours</span>
+  </a>
+
+  <!-- HEADER -->
+  <header id="main-header" role="banner">
+    <div class="header-inner">
+      <!-- TMAC SVG Logo -->
+      <a href="#home" class="logo-link" id="tmac-logo" aria-label="TMAC — TAM Analytics Consulting Home">
+        <svg class="tmac-logo-svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="44" height="44" rx="8" fill="#0D1B2A"/>
+          <!-- T shape -->
+          <rect x="6" y="8" width="32" height="5" rx="1.5" fill="#F4A261"/>
+          <rect x="19" y="12" width="6" height="24" rx="1.5" fill="#F4A261"/>
+          <!-- M inside lower -->
+          <path d="M8 20 L12 30 L16 24 L20 30 L24 20" stroke="#1565C0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <!-- A accent -->
+          <path d="M27 30 L31 20 L35 30" stroke="#00B4D8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <line x1="28.5" y1="26" x2="33.5" y2="26" stroke="#00B4D8" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div class="logo-text-wrap">
+          <span class="logo-tmac">TMAC</span>
+          <span class="logo-full">TAM Analytics Consulting</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav id="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-item">About</a></li>
+          <li><a href="#services" class="nav-item">Services</a></li>
+          <li><a href="#industries" class="nav-item">Industries</a></li>
+          <li><a href="#solutions" class="nav-item">Solutions</a></li>
+          <li><a href="#research" class="nav-item">Research Institute</a></li>
+          <li><a href="#case-studies" class="nav-item">Case Studies</a></li>
+          <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-primary btn-sm" id="nav-cta-btn">Book a Strategy Session</a>
+        <button class="hamburger" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="h-bar"></span>
+          <span class="h-bar"></span>
+          <span class="h-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-overlay" id="mobile-nav" aria-hidden="true" role="dialog" aria-label="Mobile Navigation">
+    <nav>
+      <ul class="mobile-nav-list">
+        <li><a href="#about" class="mobile-nav-item">About</a></li>
+        <li><a href="#services" class="mobile-nav-item">Services</a></li>
+        <li><a href="#industries" class="mobile-nav-item">Industries</a></li>
+        <li><a href="#solutions" class="mobile-nav-item">Solutions</a></li>
+        <li><a href="#research" class="mobile-nav-item">Research Institute</a></li>
+        <li><a href="#case-studies" class="mobile-nav-item">Case Studies</a></li>
+        <li><a href="#contact" class="mobile-nav-item">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary w-full text-center mt-8" id="mobile-nav-cta">Book a Strategy Session</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- SECTION 1: HERO -->
+    <section id="home" class="hero-section" aria-labelledby="hero-headline">
+      <div class="hero-container">
+        <div class="hero-content">
+          <!-- Social proof badge -->
+          <div class="hero-badge" id="hero-trust-badge">
+            <span class="badge-live"></span>
+            <span>Trusted by SMEs, NGOs, Startups and Educational Institutions across Africa</span>
+          </div>
+
+          <!-- Headline with typewriter -->
+          <h1 class="hero-h1" id="hero-headline">
+            <span class="typewriter-text" id="typewriter-el"></span><span class="cursor-blink">|</span>
+          </h1>
+
+          <p class="hero-sub" id="hero-subheadline">
+            TMAC helps organizations build digital systems, generate actionable intelligence, and automate operations for sustainable growth.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary btn-lg shadow-gold" id="hero-cta-primary">Book a Strategy Session</a>
+            <a href="#services" class="btn btn-outline btn-lg" id="hero-cta-secondary">Explore Our Services</a>
+          </div>
+
+          <!-- Stats Row -->
+          <div class="hero-stats-row" role="list">
+            <div class="h-stat" role="listitem">
+              <span class="h-stat-val">3–5%</span>
+              <span class="h-stat-lbl">Consultation Conversion Target</span>
+            </div>
+            <div class="h-stat-sep" aria-hidden="true"></div>
+            <div class="h-stat" role="listitem">
+              <span class="h-stat-val">60–80%</span>
+              <span class="h-stat-lbl">Process Time Reduction</span>
+            </div>
+            <div class="h-stat-sep" aria-hidden="true"></div>
+            <div class="h-stat" role="listitem">
+              <span class="h-stat-val">48hrs</span>
+              <span class="h-stat-lbl">Enquiry Response Time</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Animated data card -->
+        <div class="hero-visual-panel" aria-hidden="true">
+          <div class="hvp-header">
+            <div class="hvp-dots">
+              <span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span>
+            </div>
+            <span class="hvp-title">TMAC INTELLIGENCE ENGINE</span>
+            <span class="hvp-badge">LIVE</span>
+          </div>
+          <div class="hvp-body">
+            <div class="hvp-kpis">
+              <div class="hvp-kpi">
+                <span class="kpi-label">DATA PIPELINES ACTIVE</span>
+                <span class="kpi-val cyan">247</span>
+              </div>
+              <div class="hvp-kpi">
+                <span class="kpi-label">MODEL ACCURACY</span>
+                <span class="kpi-val gold">96.4%</span>
+              </div>
+            </div>
+            <!-- Animated SVG Network -->
+            <div class="hvp-svg-wrap">
+              <svg viewBox="0 0 400 160" class="network-svg" aria-hidden="true">
+                <!-- Grid -->
+                <line x1="0" y1="40" x2="400" y2="40" stroke="rgba(0,180,216,0.1)" stroke-dasharray="4,4"/>
+                <line x1="0" y1="80" x2="400" y2="80" stroke="rgba(0,180,216,0.1)" stroke-dasharray="4,4"/>
+                <line x1="0" y1="120" x2="400" y2="120" stroke="rgba(0,180,216,0.1)" stroke-dasharray="4,4"/>
+                <!-- Teal Line -->
+                <path class="net-line-1" d="M 10,110 C 80,30 140,130 200,60 C 260,0 310,110 390,35" fill="none" stroke="#00B4D8" stroke-width="2.5" stroke-linecap="round"/>
+                <!-- Gold Line -->
+                <path class="net-line-2" d="M 10,60 C 70,120 160,20 230,90 C 290,150 340,40 390,110" fill="none" stroke="#F4A261" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+                <!-- Nodes -->
+                <g><circle cx="100" cy="68" r="5" fill="#00B4D8"/><circle cx="100" cy="68" r="11" fill="none" stroke="#00B4D8" stroke-width="1.5" class="node-pulse"/></g>
+                <g><circle cx="200" cy="60" r="5" fill="#1565C0"/><circle cx="200" cy="60" r="11" fill="none" stroke="#1565C0" stroke-width="1.5" class="node-pulse" style="animation-delay:0.6s"/></g>
+                <g><circle cx="310" cy="78" r="5" fill="#F4A261"/><circle cx="310" cy="78" r="11" fill="none" stroke="#F4A261" stroke-width="1.5" class="node-pulse" style="animation-delay:1.2s"/></g>
+              </svg>
+            </div>
+            <div class="hvp-footer">
+              <span class="hvp-cap">Build · Analyze · Automate</span>
+              <span class="hvp-fps">60 FPS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-hint" aria-hidden="true">
+        <span>Scroll to explore</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: BUILD · ANALYZE · AUTOMATE Framework -->
+    <section id="services" class="framework-section light-section" aria-labelledby="framework-heading">
+      <div class="section-wrap">
+        <div class="section-head text-center reveal">
+          <span class="label-pill">WHAT WE DO</span>
+          <h2 id="framework-heading" class="section-h2">Everything an Intelligent Business Needs</h2>
+          <p class="section-sub">We don't solve one piece of the puzzle. We build the whole picture — from digital systems and data intelligence to full automation.</p>
+        </div>
+
+        <div class="pillars-grid">
+          <!-- BUILD -->
+          <div class="pillar-card reveal" id="pillar-build" style="--delay:0s">
+            <div class="pillar-accent build-accent"></div>
+            <div class="pillar-icon build-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/>
+                <path d="M7 10h2l1-3 2 6 1-3h2"/>
+              </svg>
+            </div>
+            <h3 class="pillar-title">Build</h3>
+            <p class="pillar-sub">Software Engineering</p>
+            <p class="pillar-body">We design and build production-grade digital systems — web applications, mobile platforms, APIs, and SaaS products — engineered for the African market and built for global standards.</p>
+            <a href="#contact" class="pillar-link build-link">Explore Build Services →</a>
+          </div>
+
+          <!-- ANALYZE -->
+          <div class="pillar-card reveal featured-pillar" id="pillar-analyze" style="--delay:0.15s">
+            <div class="pillar-accent analyze-accent"></div>
+            <div class="pillar-icon analyze-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/>
+              </svg>
+            </div>
+            <h3 class="pillar-title">Analyze</h3>
+            <p class="pillar-sub">Analytics & Intelligence</p>
+            <p class="pillar-body">We transform raw data into structured intelligence. From Power BI dashboards to predictive models, we give decision-makers the visibility to lead with confidence.</p>
+            <a href="#contact" class="pillar-link analyze-link">Explore Analyze Services →</a>
+          </div>
+
+          <!-- AUTOMATE -->
+          <div class="pillar-card reveal" id="pillar-automate" style="--delay:0.3s">
+            <div class="pillar-accent automate-accent"></div>
+            <div class="pillar-icon automate-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 8v4l3 3"/><path d="M20 2v6h-6"/>
+              </svg>
+            </div>
+            <h3 class="pillar-title">Automate</h3>
+            <p class="pillar-sub">AI & Intelligent Automation</p>
+            <p class="pillar-body">We identify and eliminate operational bottlenecks using AI workflows, intelligent automation, and LLM-powered systems that scale your output without scaling your headcount.</p>
+            <a href="#contact" class="pillar-link automate-link">Explore Automate Services →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: INDUSTRIES -->
+    <section id="industries" class="industries-section dark-section" aria-labelledby="industries-heading">
+      <div class="section-wrap">
+        <div class="section-head text-center reveal">
+          <span class="label-pill label-pill-light">INDUSTRIES</span>
+          <h2 id="industries-heading" class="section-h2 light-heading">Built for the Organizations Driving Africa Forward</h2>
+          <p class="section-sub light-sub">Every industry has different data, different workflows, and different definitions of intelligence. TMAC works in yours.</p>
+        </div>
+
+        <div class="industries-grid">
+          <div class="industry-tile reveal" id="ind-sme" style="--delay:0s">
+            <div class="ind-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <h3 class="ind-label">SMEs</h3>
+            <p class="ind-desc">Affordable digital intelligence for growing businesses</p>
+          </div>
+
+          <div class="industry-tile reveal" id="ind-startup" style="--delay:0.1s">
+            <div class="ind-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </div>
+            <h3 class="ind-label">Startups</h3>
+            <p class="ind-desc">Speed-to-market technology and investor-ready analytics</p>
+          </div>
+
+          <div class="industry-tile reveal" id="ind-ngo" style="--delay:0.2s">
+            <div class="ind-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+            <h3 class="ind-label">NGOs</h3>
+            <p class="ind-desc">Impact measurement, donor reporting, and M&E systems</p>
+          </div>
+
+          <div class="industry-tile reveal" id="ind-edu" style="--delay:0.3s">
+            <div class="ind-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              </svg>
+            </div>
+            <h3 class="ind-label">Educational Institutions</h3>
+            <p class="ind-desc">Student analytics, research support, and institutional intelligence</p>
+          </div>
+
+          <div class="industry-tile reveal" id="ind-health" style="--delay:0.4s">
+            <div class="ind-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="M9 12h6m-3-3v6"/>
+              </svg>
+            </div>
+            <h3 class="ind-label">Healthcare</h3>
+            <p class="ind-desc">Patient data systems, health analytics, and process automation</p>
+          </div>
+
+          <div class="industry-tile reveal" id="ind-finance" style="--delay:0.5s">
+            <div class="ind-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </div>
+            <h3 class="ind-label">Financial Services</h3>
+            <p class="ind-desc">Risk analytics, reporting infrastructure, and automation</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: CASE STUDIES PREVIEW -->
+    <section id="case-studies" class="cases-section light-section" aria-labelledby="cases-heading">
+      <div class="section-wrap">
+        <div class="section-head text-center reveal">
+          <span class="label-pill">PROOF OF WORK</span>
+          <h2 id="cases-heading" class="section-h2">Results That Speak</h2>
+          <p class="section-sub">Every engagement TMAC undertakes is an opportunity to solve a real problem and generate a measurable outcome.</p>
+        </div>
+
+        <div class="cases-grid">
+          <article class="case-card reveal" id="case-1" style="--delay:0s">
+            <div class="case-img case-img-1" aria-hidden="true">
+              <div class="case-overlay">
+                <span class="case-ind-tag">NGO</span>
+                <span class="case-svc-tag">Analyze</span>
+              </div>
+            </div>
+            <div class="case-body">
+              <h3 class="case-title">How a Lagos NGO Reduced Reporting Time by 70% Using Automated Dashboards</h3>
+              <p class="case-result">70% reduction in quarterly reporting time — automated Power BI impact dashboards connected to live field data.</p>
+              <a href="#contact" class="case-link">Read Full Case Study →</a>
+            </div>
+          </article>
+
+          <article class="case-card reveal" id="case-2" style="--delay:0.15s">
+            <div class="case-img case-img-2" aria-hidden="true">
+              <div class="case-overlay">
+                <span class="case-ind-tag">SME</span>
+                <span class="case-svc-tag">Build + Analyze</span>
+              </div>
+            </div>
+            <div class="case-body">
+              <h3 class="case-title">SME Gains Full Business Visibility with Custom KPI Dashboard in 30 Days</h3>
+              <p class="case-result">Real-time revenue, operations, and customer KPI tracking — replacing 4 disconnected spreadsheets.</p>
+              <a href="#contact" class="case-link">Read Full Case Study →</a>
+            </div>
+          </article>
+
+          <article class="case-card reveal" id="case-3" style="--delay:0.3s">
+            <div class="case-img case-img-3" aria-hidden="true">
+              <div class="case-overlay">
+                <span class="case-ind-tag">Financial Services</span>
+                <span class="case-svc-tag">Automate</span>
+              </div>
+            </div>
+            <div class="case-body">
+              <h3 class="case-title">Financial Services Firm Automates 5 Core Workflows, Saves 14 Hours Per Week</h3>
+              <p class="case-result">Business Process Automation eliminated manual handoffs, reducing processing time by 62%.</p>
+              <a href="#contact" class="case-link">Read Full Case Study →</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="text-center mt-10 reveal">
+          <a href="#contact" class="btn btn-outline btn-lg" id="view-all-cases-btn">View All Case Studies →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: TECHNOLOGY STACK -->
+    <section id="tech-stack" class="tech-section dark-section" aria-labelledby="tech-heading">
+      <div class="section-wrap">
+        <div class="section-head text-center reveal">
+          <span class="label-pill label-pill-light">TECHNOLOGY</span>
+          <h2 id="tech-heading" class="section-h2 light-heading">Built on Industry-Leading Technology</h2>
+          <p class="section-sub light-sub">We work with the tools the world's best engineering teams trust — delivering solutions that are scalable, secure, and maintainable.</p>
+        </div>
+
+        <div class="tech-grid reveal">
+          <div class="tech-category">
+            <span class="tech-cat-label">Frontend</span>
+            <div class="tech-tags">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Next.js</span>
+            </div>
+            <p class="tech-desc">Fast, scalable web interfaces — the same stack powering the world's leading SaaS platforms.</p>
+          </div>
+          <div class="tech-category">
+            <span class="tech-cat-label">Backend</span>
+            <div class="tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">FastAPI</span>
+            </div>
+            <p class="tech-desc">High-performance APIs and data services that are clean, documented, and maintainable.</p>
+          </div>
+          <div class="tech-category">
+            <span class="tech-cat-label">Analytics</span>
+            <div class="tech-tags">
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">Python</span>
+            </div>
+            <p class="tech-desc">From raw SQL queries to production Power BI dashboards — intelligence at every layer.</p>
+          </div>
+          <div class="tech-category">
+            <span class="tech-cat-label">AI & Automation</span>
+            <div class="tech-tags">
+              <span class="tech-tag gold-tag">OpenAI</span>
+              <span class="tech-tag gold-tag">LLMs</span>
+            </div>
+            <p class="tech-desc">Intelligent systems built on the most capable AI models — doing real work inside real organizations.</p>
+          </div>
+          <div class="tech-category">
+            <span class="tech-cat-label">Cloud</span>
+            <div class="tech-tags">
+              <span class="tech-tag">AWS</span>
+              <span class="tech-tag">Azure</span>
+            </div>
+            <p class="tech-desc">Cloud-native deployment with scalable architecture, monitoring, and security standards.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: CLIENT TESTIMONIALS -->
+    <section id="testimonials" class="testimonials-section light-section" aria-labelledby="testi-heading">
+      <div class="section-wrap">
+        <div class="section-head text-center reveal">
+          <span class="label-pill">CLIENT VOICES</span>
+          <h2 id="testi-heading" class="section-h2">What Our Clients Say</h2>
+        </div>
+
+        <div class="testi-grid">
+          <blockquote class="testi-card reveal" id="testi-1" style="--delay:0s">
+            <p class="testi-quote">"TMAC delivered a dashboard that changed the way our leadership makes decisions. We went from guessing to knowing — in under 6 weeks. Their precision and speed are genuinely unmatched."</p>
+            <footer class="testi-footer">
+              <div class="testi-avatar" aria-hidden="true">A</div>
+              <div class="testi-meta">
+                <cite class="testi-name">Adebayo Okafor</cite>
+                <span class="testi-role">CEO, Apex SME Group</span>
+                <span class="testi-ind-tag">SME</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testi-card reveal" id="testi-2" style="--delay:0.2s">
+            <p class="testi-quote">"The NGO Analytics Suite gave our M&E team a completely new way of working. Donor reports that used to take 3 days now run automatically every quarter. This is transformative."</p>
+            <footer class="testi-footer">
+              <div class="testi-avatar" aria-hidden="true">F</div>
+              <div class="testi-meta">
+                <cite class="testi-name">Fatima Aliyu</cite>
+                <span class="testi-role">Programme Director, Development Foundation</span>
+                <span class="testi-ind-tag">NGO</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testi-card reveal" id="testi-3" style="--delay:0.4s">
+            <p class="testi-quote">"We brought in TMAC to automate our reporting workflows. What they built saved us 14 hours per week and surfaced insights we didn't even know existed. High-quality, senior-level work."</p>
+            <footer class="testi-footer">
+              <div class="testi-avatar" aria-hidden="true">C</div>
+              <div class="testi-meta">
+                <cite class="testi-name">Chukwuemeka Eze</cite>
+                <span class="testi-role">Head of Operations, FinancePro Ltd</span>
+                <span class="testi-ind-tag">Financial Services</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: ABOUT TMAC -->
+    <section id="about" class="about-section dark-section" aria-labelledby="about-heading">
+      <div class="section-wrap about-grid">
+        <div class="about-content reveal">
+          <span class="label-pill label-pill-light">WHO WE ARE</span>
+          <h2 id="about-heading" class="section-h2 light-heading">We Are TMAC</h2>
+          <p class="about-lead">A Digital Intelligence Company engineering Africa's most intelligent business systems.</p>
+          <p class="about-body">TMAC — TAM Analytics Consulting — integrates three capabilities that most organizations purchase separately: <strong>software engineering</strong>, <strong>data analytics</strong>, and <strong>intelligent automation</strong>.</p>
+          <p class="about-body">We build the systems your organization runs on. We analyze the data those systems generate. And we automate the processes that drain your team's time and attention.</p>
+          <p class="about-body tagline-line"><em>In a market of specialists, TMAC delivers the complete picture.</em></p>
+          <p class="about-africa">Built for Africa. Benchmarked against the world.</p>
+
+          <div class="about-pillars-mini">
+            <div class="apm-item"><span class="apm-dot cyan-dot"></span> We build systems.</div>
+            <div class="apm-item"><span class="apm-dot blue-dot"></span> We generate intelligence.</div>
+            <div class="apm-item"><span class="apm-dot gold-dot"></span> We automate growth.</div>
+          </div>
+          <a href="#contact" class="btn btn-primary mt-6" id="about-cta">Book a Strategy Session</a>
+        </div>
+
+        <div class="about-why reveal" style="--delay:0.2s">
+          <h3 class="why-title">Why TMAC?</h3>
+          <table class="why-table" aria-label="TMAC vs Typical Competitor comparison">
+            <thead>
+              <tr><th>Capability</th><th>TMAC</th><th>Competitors</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Integrated Build + Analyze + Automate</td><td class="check yes">✓ Yes</td><td class="check no">✗ Rarely</td></tr>
+              <tr><td>African market context &amp; expertise</td><td class="check yes">✓ Yes</td><td class="check no">✗ Often imported</td></tr>
+              <tr><td>Research Institute credibility layer</td><td class="check yes">✓ Yes</td><td class="check no">✗ No</td></tr>
+              <tr><td>Platform product in development</td><td class="check yes">✓ Yes</td><td class="check no">✗ No</td></tr>
+              <tr><td>Lean, fast, and senior-led delivery</td><td class="check yes">✓ Yes</td><td class="check no">✗ Variable</td></tr>
+            </tbody>
+          </table>
+
+          <div class="values-grid">
+            <div class="val-chip"><strong>Precision</strong><span>Evidence-based deliverables</span></div>
+            <div class="val-chip"><strong>Integrity</strong><span>We do not over-promise</span></div>
+            <div class="val-chip"><strong>Innovation</strong><span>Emerging tech investment</span></div>
+            <div class="val-chip"><strong>Impact</strong><span>Tangible improvement only</span></div>
+            <div class="val-chip"><strong>Excellence</strong><span>Global benchmark standards</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: SOLUTIONS -->
+    <section id="solutions" class="solutions-section light-section" aria-labelledby="solutions-heading">
+      <div class="section-wrap">
+        <div class="section-head text-center reveal">
+          <span class="label-pill">SOLUTIONS</span>
+          <h2 id="solutions-heading" class="section-h2">Packaged Intelligence for Your Organization</h2>
+          <p class="section-sub">Pre-scoped, outcome-defined packages — with a clear deliverable, timeline, and result.</p>
+        </div>
+
+        <div class="solutions-grid">
+          <div class="solution-card reveal" id="sol-sme" style="--delay:0s">
+            <div class="sol-num">01</div>
+            <div class="sol-tag">SME Intelligence Suite</div>
+            <h3 class="sol-title">Everything a Growing Business Needs to See Clearly and Move Fast</h3>
+            <ul class="sol-list">
+              <li>Business Performance Dashboard — live KPI tracking</li>
+              <li>Financial Reporting System — automated summaries</li>
+              <li>CRM or Operations Web App</li>
+              <li>Process Automation Starter Pack — 3 key workflows</li>
+              <li>Monthly Analytics Review session</li>
+            </ul>
+            <div class="sol-outcome">
+              <span class="sol-out-label">OUTCOME</span>
+              <span class="sol-out-time">Within 60 days</span>
+            </div>
+            <a href="#contact" class="btn btn-primary w-full text-center sol-btn" id="sol-sme-cta">Book an SME Intelligence Consultation</a>
+          </div>
+
+          <div class="solution-card featured-sol reveal" id="sol-auto" style="--delay:0.15s">
+            <div class="sol-num">02</div>
+            <div class="sol-tag">Business Automation Suite</div>
+            <h3 class="sol-title">Stop Running Your Business on Manual Labour</h3>
+            <ul class="sol-list">
+              <li>Automation Audit — top 10 ROI-ranked candidates</li>
+              <li>Workflow Automation — up to 5 processes</li>
+              <li>AI Assistant Integration — trained on your context</li>
+              <li>Full system documentation and staff training</li>
+              <li>30-day Post-Launch Support</li>
+            </ul>
+            <div class="sol-outcome">
+              <span class="sol-out-label">OUTCOME</span>
+              <span class="sol-out-time">Within 90 days</span>
+            </div>
+            <a href="#contact" class="btn btn-primary w-full text-center sol-btn" id="sol-auto-cta">Request an Automation Audit</a>
+          </div>
+
+          <div class="solution-card reveal" id="sol-ngo" style="--delay:0.3s">
+            <div class="sol-num">03</div>
+            <div class="sol-tag">NGO Analytics Suite</div>
+            <h3 class="sol-title">Turn Your Field Data Into Donor-Ready Intelligence</h3>
+            <ul class="sol-list">
+              <li>M&E Framework Design — full indicator set</li>
+              <li>Data Collection System — mobile-first tools</li>
+              <li>Impact Dashboard — real-time Power BI</li>
+              <li>Donor Report Automation — quarterly auto-generation</li>
+              <li>Data Training — 2-day capacity building workshop</li>
+            </ul>
+            <div class="sol-outcome">
+              <span class="sol-out-label">OUTCOME</span>
+              <span class="sol-out-time">Within 45 days</span>
+            </div>
+            <a href="#contact" class="btn btn-primary w-full text-center sol-btn" id="sol-ngo-cta">Book an NGO Analytics Consultation</a>
+          </div>
+
+          <div class="solution-card reveal" id="sol-research" style="--delay:0.45s">
+            <div class="sol-num">04</div>
+            <div class="sol-tag">Research Intelligence Suite</div>
+            <h3 class="sol-title">From Research Question to Published Intelligence</h3>
+            <ul class="sol-list">
+              <li>Research Design Consulting — methodology + sampling</li>
+              <li>Data Collection System Build</li>
+              <li>Statistical Analysis — quantitative &amp; qualitative</li>
+              <li>Professional Research Report</li>
+              <li>Executive Presentation Deck</li>
+            </ul>
+            <div class="sol-outcome">
+              <span class="sol-out-label">OUTCOME</span>
+              <span class="sol-out-time">Publication-ready output</span>
+            </div>
+            <a href="#contact" class="btn btn-primary w-full text-center sol-btn" id="sol-research-cta">Commission Research</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9: RESEARCH INSTITUTE -->
+    <section id="research" class="research-section dark-section" aria-labelledby="research-heading">
+      <div class="section-wrap research-grid">
+        <div class="research-content reveal">
+          <span class="label-pill label-pill-light">RESEARCH</span>
+          <h2 id="research-heading" class="section-h2 light-heading">Grounded in Rigour. Powered by Data.</h2>
+          <p class="research-lead">Where Data Becomes Knowledge</p>
+          <p class="research-body">The Tam Research &amp; Analytics Institute provides rigorous research, statistical consulting, and intelligence services to organizations that need evidence-based answers. From M&E to sector research, the Institute is where data becomes knowledge.</p>
+          <p class="research-body">We are not a market research agency that produces generic reports. We are an analytical research practice that designs methodology, collects primary data, applies advanced statistical methods, and delivers intelligence that changes decisions.</p>
+
+          <div class="research-interest-tags">
+            <span class="ri-tag">Africa digital economy</span>
+            <span class="ri-tag">Development sector impact</span>
+            <span class="ri-tag">Health data analytics</span>
+            <span class="ri-tag">Education performance research</span>
+            <span class="ri-tag">SME ecosystem intelligence</span>
+          </div>
+
+          <div class="research-ctas">
+            <a href="#contact" class="btn btn-primary" id="research-explore-btn">Explore the Research Institute →</a>
+            <a href="#contact" class="btn btn-outline-light" id="research-commission-btn">Commission Research →</a>
+          </div>
+        </div>
+
+        <div class="research-services-panel reveal" style="--delay:0.2s">
+          <h3 class="rsp-title">Research Services</h3>
+          <ul class="rsp-list">
+            <li class="rsp-item"><span class="rsp-dot"></span><span><strong>Research Design Consulting</strong> — methodology, sampling, instruments, and frameworks</span></li>
+            <li class="rsp-item"><span class="rsp-dot"></span><span><strong>Statistical Analysis</strong> — quantitative, qualitative, and mixed-methods</span></li>
+            <li class="rsp-item"><span class="rsp-dot"></span><span><strong>Survey Design &amp; Administration</strong> — from instrument design to field management</span></li>
+            <li class="rsp-item"><span class="rsp-dot"></span><span><strong>Monitoring, Evaluation &amp; Learning</strong> — framework design and impact measurement</span></li>
+            <li class="rsp-item"><span class="rsp-dot"></span><span><strong>Sector Intelligence Reports</strong> — commissioned analysis of markets, sectors, and policy areas</span></li>
+            <li class="rsp-item"><span class="rsp-dot"></span><span><strong>Academic Research Support</strong> — thesis analysis, dissertation data work</span></li>
+            <li class="rsp-item"><span class="rsp-dot"></span><span><strong>Data Audit &amp; Quality Assessment</strong> — assess datasets for quality, gaps, and readiness</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 10: CONTACT / FINAL CTA STRIP + FORM -->
+    <section id="contact" class="contact-section light-section" aria-labelledby="contact-heading">
+      <div class="section-wrap">
+        <!-- CTA Strip -->
+        <div class="cta-strip reveal">
+          <div class="cta-strip-content">
+            <h2 id="contact-heading" class="cta-strip-h2">Ready to Build Something Intelligent?</h2>
+            <p class="cta-strip-sub">Book a free 30-minute strategy session with TMAC. No sales pitch. Just a focused conversation about what your organization needs and how we can help.</p>
+            <div class="cta-strip-actions">
+              <a href="#contact-form" class="btn btn-primary btn-lg shadow-gold" id="cta-strip-session-btn">Book Your Strategy Session</a>
+              <a href="https://wa.me/2348100740782?text=Hello%20TMAC%2C%20I'd%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg" id="cta-strip-wa-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                WhatsApp Us Now
+              </a>
+            </div>
+            <div class="cta-strip-contact-details">
+              <span>📞 <a href="tel:+2348100740782">+2348100740782</a></span>
+              <span>✉️ <a href="mailto:tamanalyticsconsulting@gmail.com">tamanalyticsconsulting@gmail.com</a></span>
+              <span>⏱️ We respond to all enquiries within 24 hours.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Consultation Form -->
+        <div class="contact-form-grid">
+          <div class="contact-left reveal">
+            <h3 class="contact-left-h3">Let's Build Something Intelligent Together</h3>
+            <p class="contact-left-sub">Whether you're ready to start a project, exploring options, or just want to understand what TMAC can do — the conversation starts here.</p>
+            <div class="contact-info-cards">
+              <div class="cic">
+                <span class="cic-icon">📞</span>
+                <div>
+                  <span class="cic-lbl">Phone / WhatsApp</span>
+                  <a class="cic-val" href="tel:+2348100740782">+2348100740782</a>
+                </div>
+              </div>
+              <div class="cic">
+                <span class="cic-icon">✉️</span>
+                <div>
+                  <span class="cic-lbl">Email</span>
+                  <a class="cic-val" href="mailto:tamanalyticsconsulting@gmail.com">tamanalyticsconsulting@gmail.com</a>
+                </div>
+              </div>
+            </div>
+            <a href="https://wa.me/2348100740782?text=Hello%20TMAC%2C%20I'd%20like%20to%20discuss%20a%20project." class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" id="contact-wa-direct-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp Us Now →
+            </a>
+          </div>
+
+          <div class="contact-form-wrap reveal" style="--delay:0.15s" id="contact-form">
+            <h3 class="form-title">Book a Free Strategy Session</h3>
+            <p class="form-sub">30 minutes. Free. No obligation. Bring your challenge. We'll bring our thinking.</p>
+
+            <form id="enquiry-form" novalidate>
+              <div class="form-row">
+                <div class="field-group">
+                  <input type="text" id="f-name" class="field-input" placeholder=" " required minlength="2" autocomplete="name">
+                  <label for="f-name" class="field-label">Full Name *</label>
+                </div>
+                <div class="field-group">
+                  <input type="text" id="f-org" class="field-input" placeholder=" " required autocomplete="organization">
+                  <label for="f-org" class="field-label">Organization Name *</label>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="field-group">
+                  <input type="email" id="f-email" class="field-input" placeholder=" " required autocomplete="email">
+                  <label for="f-email" class="field-label">Email Address *</label>
+                </div>
+                <div class="field-group">
+                  <input type="tel" id="f-phone" class="field-input" placeholder=" " autocomplete="tel">
+                  <label for="f-phone" class="field-label">Phone / WhatsApp (optional)</label>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="field-group">
+                  <select id="f-industry" class="field-input field-select" required aria-label="Industry selector">
+                    <option value="" disabled selected hidden></option>
+                    <option>SME</option>
+                    <option>Startup</option>
+                    <option>NGO</option>
+                    <option>Educational Institution</option>
+                    <option>Healthcare</option>
+                    <option>Financial Services</option>
+                    <option>Other</option>
+                  </select>
+                  <label for="f-industry" class="field-label">Industry *</label>
+                </div>
+                <div class="field-group">
+                  <select id="f-budget" class="field-input field-select" aria-label="Budget range selector">
+                    <option value="" disabled selected hidden></option>
+                    <option>Under $1,000</option>
+                    <option>$1,000–$5,000</option>
+                    <option>$5,000–$15,000</option>
+                    <option>$15,000+</option>
+                    <option>Not sure</option>
+                  </select>
+                  <label for="f-budget" class="field-label">Budget Range</label>
+                </div>
+              </div>
+
+              <!-- Service Interest Checkboxes -->
+              <div class="field-group full-width">
+                <span class="checkbox-legend">Service Interest</span>
+                <div class="checkbox-grid">
+                  <label class="check-label"><input type="checkbox" value="Build"> Build</label>
+                  <label class="check-label"><input type="checkbox" value="Analyze"> Analyze</label>
+                  <label class="check-label"><input type="checkbox" value="Automate"> Automate</label>
+                  <label class="check-label"><input type="checkbox" value="Research"> Research</label>
+                  <label class="check-label"><input type="checkbox" value="Training"> Training</label>
+                  <label class="check-label"><input type="checkbox" value="Not sure yet"> Not sure yet</label>
+                </div>
+              </div>
+
+              <div class="field-group full-width">
+                <textarea id="f-desc" class="field-input field-textarea" placeholder=" " required minlength="50" rows="4"></textarea>
+                <label for="f-desc" class="field-label">Briefly describe what you need help with *</label>
+              </div>
+
+              <div class="form-row">
+                <div class="field-group">
+                  <select id="f-source" class="field-input field-select" aria-label="How did you hear about us">
+                    <option value="" disabled selected hidden></option>
+                    <option>LinkedIn</option>
+                    <option>Google</option>
+                    <option>Referral</option>
+                    <option>Social Media</option>
+                    <option>Other</option>
+                  </select>
+                  <label for="f-source" class="field-label">How did you hear about us?</label>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-full shadow-gold form-submit-btn" id="form-submit-btn">Send My Enquiry</button>
+            </form>
+
+            <!-- Success Message -->
+            <div class="form-success hidden" id="form-success" role="alert" aria-live="polite">
+              <div class="success-icon-wrap" aria-hidden="true">🚀</div>
+              <h4>Enquiry Received!</h4>
+              <p>Thank you. Your enquiry has been received. A member of our team will respond within 24 hours.</p>
+              <a href="https://wa.me/2348100740782?text=Hello%20TMAC%2C%20I'd%20like%20to%20discuss%20a%20project." class="btn btn-whatsapp mt-4" target="_blank" rel="noopener noreferrer">Or Chat With Us Now on WhatsApp →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="main-footer dark-section" role="contentinfo">
+    <div class="section-wrap footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo-link footer-logo" aria-label="TMAC Home">
+          <svg class="tmac-logo-svg" width="36" height="36" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="44" height="44" rx="8" fill="#0D1B2A"/>
+            <rect x="6" y="8" width="32" height="5" rx="1.5" fill="#F4A261"/>
+            <rect x="19" y="12" width="6" height="24" rx="1.5" fill="#F4A261"/>
+            <path d="M8 20 L12 30 L16 24 L20 30 L24 20" stroke="#1565C0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M27 30 L31 20 L35 30" stroke="#00B4D8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <line x1="28.5" y1="26" x2="33.5" y2="26" stroke="#00B4D8" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <div class="logo-text-wrap">
+            <span class="logo-tmac">TMAC</span>
+            <span class="logo-full">TAM Analytics Consulting</span>
+          </div>
+        </a>
+        <p class="footer-tagline">Build. · Analyze. · Automate.</p>
+        <p class="footer-mission">Engineering Intelligent Business Systems — built for Africa, benchmarked against the world.</p>
+        <div class="social-links" aria-label="Social media links">
+          <a href="#" class="social-icon" aria-label="LinkedIn" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="X (Twitter)" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.259 5.631zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-col-head">Services</h4>
+        <ul class="footer-links">
+          <li><a href="#services">Build</a></li>
+          <li><a href="#services">Analyze</a></li>
+          <li><a href="#services">Automate</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-col-head">Company</h4>
+        <ul class="footer-links">
+          <li><a href="#about">About TMAC</a></li>
+          <li><a href="#research">Research Institute</a></li>
+          <li><a href="#case-studies">Case Studies</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-col-head">Contact</h4>
+        <ul class="footer-links">
+          <li><a href="tel:+2348100740782">+2348100740782</a></li>
+          <li><a href="mailto:tamanalyticsconsulting@gmail.com">tamanalyticsconsulting@gmail.com</a></li>
+          <li><a href="#contact" class="footer-cta-link">Book a Strategy Session →</a></li>
+        </ul>
+        <!-- Newsletter Micro Sign-up -->
+        <div class="newsletter-mini" id="newsletter-mini">
+          <p class="nl-label">Get TMAC Insights</p>
+          <div class="nl-form">
+            <input type="email" id="nl-email" class="nl-input" placeholder="your@email.com" aria-label="Newsletter email signup">
+            <button class="nl-btn" id="nl-submit-btn" aria-label="Subscribe to TMAC newsletter">→</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <p>© 2026 TAM Analytics Consulting (TMAC). All rights reserved.</p>
+      <div class="footer-legal-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
