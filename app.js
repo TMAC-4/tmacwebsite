@@ -61,7 +61,23 @@
       ].join('\n');
       const subject = `TMAC enquiry — ${data.get('organization')}`;
       const mailto = `mailto:tamanalyticsconsulting@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      status.textContent = 'Your email app should open with the enquiry details. Send the email there to complete your enquiry. If no email app opens, contact tamanalyticsconsulting@gmail.com directly.';
+      status.replaceChildren();
+      const notice = document.createElement('p');
+      notice.textContent = 'TMAC does not receive this form directly. Your device may open an email draft; review it and press Send in your email app.';
+      const fallbackLink = document.createElement('a');
+      fallbackLink.href = mailto;
+      fallbackLink.textContent = 'Open the prepared enquiry email';
+      fallbackLink.className = 'form-email-link';
+      const details = document.createElement('details');
+      const summary = document.createElement('summary');
+      summary.textContent = 'If no email draft opens, view and copy your enquiry';
+      const draft = document.createElement('textarea');
+      draft.value = body;
+      draft.readOnly = true;
+      draft.rows = 9;
+      draft.setAttribute('aria-label', 'Prepared enquiry text to copy into an email');
+      details.append(summary, draft);
+      status.append(notice, fallbackLink, details);
       window.location.href = mailto;
     });
   }
